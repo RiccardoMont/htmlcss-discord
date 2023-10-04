@@ -50,6 +50,7 @@
     --bg-button-darkgrey: #23272a;
     --button-text-lightblack: #3e4244;
     --bg-nav: #255ee9;
+    --bg-sectionsmain-lightgrey: #f6f6f6;
 }
 
 /*root*/
@@ -66,6 +67,16 @@
 .row{
     display: flex;
     flex-wrap: wrap;
+    
+}
+
+.jcontent-center {
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -80,12 +91,20 @@ a:visited{
     padding: 1rem;
 }
 
+.p-2 {
+    padding: 2rem;
+}
+
 .p-3{
     padding: 3rem;
 }
 
 .m-btn{
     margin: 1.5rem 0.5rem;
+}
+
+.m-wave{
+    margin-bottom: -4px;
 }
 
 .helvetica{
@@ -100,6 +119,10 @@ a:visited{
     font-size: 16px;
 }
 
+.size-24px{
+    font-size: 24px;
+}
+
 .size-45px{
     font-size: 45px;
 }
@@ -111,10 +134,22 @@ a:visited{
 .line-hg{
     line-height: 1.5rem;
 }
+
+.text-center{
+    text-align: center;
+}
 .color-white {
     color: var(--bg-button-white);
 }
-
+.color-black {
+    color: var(--button-text-lightblack);
+}
+.color-lightgrey {
+    color: var(--bg-sectionsmain-lightgrey)
+}
+.bg-color-lightgrey {
+    background-color: var(--bg-sectionsmain-lightgrey);
+}
 .btn-login{
     margin-top: 1.1rem;
     margin-bottom: 1.1rem;
@@ -140,6 +175,7 @@ button {
     padding: 0.5rem 0.8rem;
     border-radius: 2rem;
 }
+
 
 /*Utility*/
 
@@ -179,33 +215,44 @@ nav {
 
 /* debug Header e jumbotron*/
 
+.section-main{
+    padding: 6rem 0;
+}
 
-.bg_color_alfa_main {
-    padding: 2rem 0;
-    background-color: rgb(249, 242, 233);
+.decor {
+    transform: rotate(180deg);
+}
+
+#mask0 {
+    border-radius: 10rem;
+}
+.talking {
+    
+    /*background-color: rgb(249, 242, 233);*/
 }
 
 .bg_color_beta_main {
-    padding: 2rem 0;
-    background-color: rgb(195, 195, 192);
+    
+    /*background-color: rgb(195, 195, 192);*/
 }
 
 .img-section {
-    background-color: rgb(88, 241, 74);
+    /*background-color: rgb(88, 241, 74);
     height: 390px;
-    border: 3px dashed black;
+    border: 3px dashed black;*/
 }
 
 .text-section {
-    background-color: rgb(120, 67, 170);
+
+    /*background-color: rgb(120, 67, 170);
     height: 390px;
-    border: 3px dashed black;
+    border: 3px dashed black;*/
 }
 
 .img-final-section {
-    background-color: rgb(153, 107, 9);
+    /*background-color: rgb(153, 107, 9);
     height: 600px;
-    border: 3px dashed black;
+    border: 3px dashed black;*/
 }
 
 /*Main*/
