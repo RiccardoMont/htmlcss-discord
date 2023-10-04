@@ -49,14 +49,11 @@
     --bg-button-white: #ffffff;
     --bg-button-darkgrey: #23272a;
     --button-text-lightblack: #3e4244;
-    --bg-nav: #3161e0;
+    --bg-nav: #255ee9;
 }
 
 /*root*/
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 /*body*/
 
@@ -70,48 +67,96 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-/*
-.flex {
-    display: flex;
-    justify-content: center;
-}*/
+
 a {
     text-decoration: none;
 }
+
+a:visited{
+    color: inherit;
+}
+
 .p-1 {
     padding: 1rem;
 }
-button {
-    background-color: var(--bg-button-white);
-    border-color: var(--bg-button-white);
-    border-style: solid;
-    padding: 0.5rem;
-    border-radius: 2rem;
+
+.p-3{
+    padding: 3rem;
+}
+
+.m-btn{
+    margin: 1.5rem 0.5rem;
+}
+
+.helvetica{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.size-12px{
+    font-size: 12px;
+}
+
+.size-16px{
+    font-size: 16px;
+}
+
+.size-45px{
+    font-size: 45px;
+}
+
+.weight-600{
+    font-weight: 600;
+}
+
+.line-hg{
+    line-height: 1.5rem;
+}
+.color-white {
+    color: var(--bg-button-white);
+}
+
+.btn-login{
     margin-top: 1.1rem;
     margin-bottom: 1.1rem;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+}
+.btn-positive{
+    background-color: var(--bg-button-white);
+    border-color: var(--bg-button-white);
     color: var(--button-text-lightblack);
 }
+.btn-negative{
+    background-color: var(--bg-button-darkgrey);
+    border-color: var(--bg-button-darkgrey);
+    color: var(--bg-button-white);
+}
+#open-discord{
+    padding: 0.6rem 0.8rem;
+}
+
+button {
+    border-style: solid;
+    padding: 0.5rem 0.8rem;
+    border-radius: 2rem;
+}
+
 /*Utility*/
 
 header {
-    background-color: aqua;
-    padding-top: 1rem;
+    background-color: var(--bg-nav);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: var(--bg-nav);
     margin-bottom: 1rem;
 }
 
 .menu {
     align-self: center;
-    /*border-left: 3px dashed black;
-    border-right: 3px dashed black;*/
 }
+
 .menu ul{
     display: flex;
     justify-content: center;
@@ -119,17 +164,17 @@ nav {
 }
 
 .jumbotron{
-    padding: 2rem;
-    background-color: burlywood;
-    display: flex;
-    justify-content: center;
-    
+    background-image: url('/img/jumbo.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.bg_color_bot_header {
-    height: 280px;
-    background-color: brown;
-    border: 3px dashed black;
+.jumbo-content {
+    margin: 0 17rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    
 }
 
 /* debug Header e jumbotron*/
