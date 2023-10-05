@@ -318,11 +318,13 @@ nav {
     background-color: var(--button-text-lightblack);
 }
 
+.top-footer{
+    padding-top: 3rem;
+}
+
 .inline{
     display: flex;
-    margin: 0.5em 0;
     width: 100%;
-    
 }
 
 .info li{
