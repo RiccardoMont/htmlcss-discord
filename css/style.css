@@ -118,7 +118,6 @@
 
 /*Display flex and properties*/
 
-
 a {
     text-decoration: none;
 }
@@ -169,6 +168,8 @@ a:visited{
 }
 
 /*Margins*/
+
+
 
 .helvetica{
     font-family: Helvetica, Arial, sans-serif;
@@ -253,6 +254,7 @@ button {
     border-style: solid;
     padding: 0.5rem 0.8rem;
     border-radius: 2rem;
+    
 }
 
 /*Buttons styles*/
@@ -260,6 +262,8 @@ button {
 ul {
     list-style: none;
 }
+/*U-Liste*/
+
 
 /*Utility*/
 
@@ -283,7 +287,7 @@ nav {
 }
 
 .jumbotron{
-    background-image: url('/img/jumbo.png');
+    background-image: url('/htmlcss-discord/img/jumbo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -307,7 +311,7 @@ nav {
 }
 
 .overlap {
-    background-image: url(/img/stars.svg);
+    background-image: url(/htmlcss-discord/img/stars.svg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -365,3 +369,91 @@ nav {
 
 /* Footer */
 
+/*Start transitions and animations*/
+
+/* Inizio dissolvenza in entrata sui loghi discord*/
+.fade-in{
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*fine dissolvenza in entrata sui loghi discord*/
+
+/* inizio ombra sui links*/
+a.text-links{
+    transition: all 0.5s ease-in-out 0s;
+}
+
+a.text-links:hover{
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+
+/*fine ombra sui links*/
+
+/*inizio ingrandimento immagini*/
+.big-img-links{
+    transition: all 1s ease-in-out 0s;
+    ;
+}
+
+.big-img-links:hover{
+    transform: scale(1.2, 1.2);
+}
+/*fine ingrandimento immagini*/
+
+/* inizio bordo sotto elementi menu */
+
+.border-bot-menu::after{
+    display: block;
+    content: "";
+    border-bottom: solid 1px #ffffff;
+    transition: all 1s ease-in-out 0s;
+    transform: scaleX(0);
+}
+
+.border-bot-menu:hover::after{
+    transform: scaleX(1);
+    
+}
+
+/*fine bordo sotto elementi menu */
+
+/*inizio luccichio su immagini*/
+.position-relative{
+    position: relative;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.big-img-links span{
+    position: absolute;
+    top:0;
+    left: -110%;
+    width: 15%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 1s ease-in-out;
+    transform: skewX(-30deg);
+}
+
+.big-img-links:hover span{
+    left: 110%;
+}
+
+/*fine luccichio su immagini*/
+
+/*End transitions and animations*/
